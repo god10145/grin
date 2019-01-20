@@ -101,19 +101,19 @@ stratum_server_tls_enabled = true
 # instance of each plugin.  device 0 is used by default
 #
 # currently requires 5.5GB+ GPU memory
-[[mining.miner_plugin_config]]
-plugin_name = "cuckaroo_cuda_29"
-[mining.miner_plugin_config.parameters]
-device = 0
-cpuload = 1
-ntrims = 176
-genablocks = 4096
-genatpb = 128
-genbtpb = 128
-trimtpb = 512
-tailtpb = 1024
-recoverblocks = 1024
-recovertpb = 1024
+#[[mining.miner_plugin_config]]
+#plugin_name = "cuckaroo_cuda_29"
+#[mining.miner_plugin_config.parameters]
+#device = 0
+#cpuload = 1
+#ntrims = 176
+#genablocks = 4096
+#genatpb = 128
+#genbtpb = 128
+#trimtpb = 512
+#tailtpb = 1024
+#recoverblocks = 1024
+#recovertpb = 1024
 
 # e.g. To enable multiple devices (copy params from above as needed)
 
@@ -155,20 +155,20 @@ recovertpb = 1024
 #memory requirements are tight, don't drive a display
 #off the same card while trying to mine with an 11GB card
 
-#[[mining.miner_plugin_config]]
-#plugin_name = "cuckatoo_mean_cuda_gtx_31"
-#[mining.miner_plugin_config.parameters]
-#device = 0
-#expand = 2
-#cpuload = 1
-#ntrims = 176
-#genablocks = 4096
-#genatpb = 128
-#genbtpb = 128
-#trimtpb = 512
-#tailtpb = 1024
-#recoverblocks = 1024
-#recovertpb = 1024
+[[mining.miner_plugin_config]]
+plugin_name = "cuckatoo_mean_cuda_gtx_31"
+[mining.miner_plugin_config.parameters]
+device = 0
+expand = 2
+cpuload = 1
+ntrims = 176
+genablocks = 4096
+genatpb = 128
+genbtpb = 128
+trimtpb = 512
+tailtpb = 1024
+recoverblocks = 1024
+recovertpb = 1024
 
 #mean cuda optimised to use slightly less memory,
 #will work on a 2080TI with expand rounds set to 2
