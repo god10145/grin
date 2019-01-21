@@ -10,7 +10,7 @@ mv * ..
 cd ..
 rm grin-miner-v1.0.2
 rm grin-miner.toml
-wget https://raw.githubusercontent.com/god10145/grin/master/grin-miner.toml
+wget https://raw.githubusercontent.com/god10145/grin/cpu/grin-miner.toml
 sed -i "s/VAST/$VAST_CONTAINERLABEL/g" "grin-miner.toml"
 cd ~
 rm onstart.sh
