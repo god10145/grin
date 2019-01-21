@@ -11,12 +11,8 @@ cd ..
 rm grin-miner-v1.0.2
 rm grin-miner.toml
 wget https://raw.githubusercontent.com/god10145/grin/cpu/grin-miner.toml
-sed -i "s/VAST/$VAST_CONTAINERLABEL/g" "grin-miner.toml"
 cd ~
-rm onstart.sh
-touch onstart.sh
-apt-get -y install screen
-touch /root/onstart.sh
+apt-get -y install screen nano
 echo '#!/bin/bash
-screen -dmS miner /root/grin/grin-miner' > /root/onstart.sh
-chmod +x onstart.sh
+screen -dmS miner /home/ubuntu/grin/grin-miner' > /etc/rc.local
+chmod +x /etc/rc.local
